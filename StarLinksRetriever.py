@@ -123,7 +123,7 @@ def main(args):
         with open(filename, "w") as f:
             continuation = None
             # End when continuation is not available in returned info.
-            while not continuation or continuation is not '':
+            while continuation is not '':
                 # Retrieve starred urls.
                 data = retriever.starred(continuation)
                 # Load JSON data.
